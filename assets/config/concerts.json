@@ -1,0 +1,116 @@
+{
+  "concerts": [
+    {
+      "id": 1,
+      "title": "An Evening with The Harmonics",
+      "date": "2024-04-10",
+      "time": "20:00",
+      "imageUrl": "images/the-harmonics.jpg",
+      "description": "Een magische avond met het wereldberoemde strijkkwartet The Harmonics."
+    },
+    {
+      "id": 2,
+      "title": "Indie Explosie met Theo Klooster",
+      "date": "2024-02-15",
+      "time": "21:00",
+      "imageUrl": "images/indie-explosie.jpg",
+      "description": "Ontdek opkomende indie-bands en verrassende acts."
+    },
+    {
+      "id": 3,
+      "title": "Beethoven & Friends Live",
+      "date": "2024-05-22",
+      "time": "19:30",
+      "imageUrl": "images/classical-night.jpg",
+      "description": "Beleef klassieke meesterwerken met een live orkest."
+    },
+    {
+      "id": 4,
+      "title": "Jazz Jam Sessions",
+      "date": "2024-06-03",
+      "time": "20:00",
+      "imageUrl": "images/jazz-jam.jpg",
+      "description": "Een dynamische avond vol improvisaties en jazz."
+    },
+    {
+      "id": 5,
+      "title": "DJ Raulph Greenhouse: Dance Beats",
+      "date": "2024-03-05",
+      "time": "22:00",
+      "imageUrl": "images/dj-night.jpg",
+      "description": "Een nacht vol energieke beats en elektronische muziek."
+    },
+    {
+      "id": 6,
+      "title": "Rock Anthems Live",
+      "date": "2024-01-12",
+      "time": "20:30",
+      "imageUrl": "images/rock-anthems.jpg",
+      "description": "Herbeleef de grootste rockhits met een liveband."
+    },
+    {
+      "id": 7,
+      "title": "Latin Dance Night",
+      "date": "2024-07-02",
+      "time": "19:00",
+      "imageUrl": "images/highlights/latin-dance.jpg",
+      "description": "Heerlijke Latin vibes en dansbare muziek de hele avond."
+    },
+    {
+      "id": 8,
+      "title": "Kids Sing-Along Party",
+      "date": "2024-06-18",
+      "time": "15:30",
+      "imageUrl": "images/kids-sing-along.jpg",
+      "description": "Een interactieve middag vol zang en plezier voor kinderen."
+    },
+    {
+      "id": 9,
+      "title": "Acoustic Evenings",
+      "date": "2024-05-01",
+      "time": "18:30",
+      "imageUrl": "images/acoustic-evenings.jpg",
+      "description": "Intieme akoestische optredens in een sfeervolle setting."
+    },
+    {
+      "id": 10,
+      "title": "Musical: Metal Storm (try-out)",
+      "date": "2024-03-21",
+      "time": "21:00",
+      "imageUrl": "images/highlights/metal-storm.jpg",
+      "description": "Musical met hardrock en metal voor de echte liefhebber."
+    },
+    {
+      "id": 11,
+      "title": "Romantic Piano Night",
+      "date": "2024-02-10",
+      "time": "19:00",
+      "imageUrl": "images/piano-night.jpg",
+      "description": "Een romantische avond met prachtige pianomuziek."
+    },
+    {
+      "id": 12,
+      "title": "Legendarisch Hip-Hop",
+      "date": "2024-04-25",
+      "time": "22:00",
+      "imageUrl": "images/hiphop-legends.jpg",
+      "description": "Legendarische hip-hop acts en opkomende talenten."
+    },
+    {
+      "id": 13,
+      "title": "Folk Tales Live",
+      "date": "2024-01-20",
+      "time": "18:00",
+      "imageUrl": "images/folk-tales.jpg",
+      "description": "Traditionele folkverhalen en muziek."
+    },
+    {
+      "id": 14,
+      "title": "Meezingen met de Magische Marmotten",
+      "date": "2024-04-15",
+      "time": "14:00",
+      "imageUrl": "images/highlights/magical-kids.jpg",
+      "description": "Een betoverende show speciaal voor kinderen met muziek en magie."
+    }
+  ]
+}

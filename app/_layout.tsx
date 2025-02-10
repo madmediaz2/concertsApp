@@ -12,28 +12,38 @@ import { useColorScheme } from '@/hooks/useColorScheme';
 SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
-  const colorScheme = useColorScheme();
-  const [loaded] = useFonts({
-    SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
-  });
+	const colorScheme = useColorScheme();
+	const [loaded] = useFonts({
+		manrope: require('../assets/fonts/Manrope/Manrope-VariableFont_wght.ttf'),
+		manier: require('../assets/fonts/manier-font-family/Manier-Medium.otf')
+	});
 
-  useEffect(() => {
-    if (loaded) {
-      SplashScreen.hideAsync();
-    }
-  }, [loaded]);
+	useEffect(() => {
+		if (loaded) {
+			SplashScreen.hideAsync();
+		}
+	}, [loaded]);
 
-  if (!loaded) {
-    return null;
-  }
+	if (!loaded) {
+		return null;
+	}
 
-  return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="+not-found" />
-      </Stack>
-      <StatusBar style="auto" />
-    </ThemeProvider>
-  );
+	return (
+		<ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
+			<Stack>
+				<Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+				<Stack.Screen name="+not-found" />
+				<Stack.Screen
+					name="(screens)/buyticket"
+					options={{
+						headerShown: true,
+						headerBackTitle : "Agenda",
+						headerBackTitleStyle: { fontFamily: 'manrope', fontSize: 16 }, // Change the back title text style here
+						contentStyle: { backgroundColor: '#D7A492', } // <-- Set your desired background color here
+					}}
+				/>
+			</Stack>
+			<StatusBar style='auto' />
+		</ThemeProvider>
+	);
 }
