@@ -82,7 +82,6 @@ export default function BuyTicket() {
                     <Image source={imagesMap[concertObj.imageUrl]} style={styles.image} />
                 </View>
 
-                {/* New container for date and title */}
                 <View style={styles.textContainer}>
                     <Text style={styles.date}>{dateToString(concertObj.date)}</Text>
                     <Text style={[styles.subtitle, { fontWeight: 'bold' }]}>{concertObj.title}</Text>
@@ -151,26 +150,25 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         padding: 1,
         marginTop: 10,
-        // Add overflow hidden to ensure the image respects the borderRadius on Android
         overflow: 'hidden',
     },
     image: {
         width: 380,
         height: 380,
-        borderRadius: 10, // Adjust this value for more or less rounding
+        borderRadius: 10, 
     },
     inputContainer: {
-        marginTop: 15,         // spacing above the input container
-        paddingHorizontal: 20, // horizontal padding inside the container
+        marginTop: 15,         
+        paddingHorizontal: 20, 
     },
     input: {
-        height: 50,                   // sets the height of the input box
-        borderColor: '#ccc',          // light gray border color
-        borderWidth: 1,               // border thickness
-        borderRadius: 8,              // rounded corners for the input box
-        paddingHorizontal: 15,        // horizontal padding inside the input box
-        marginBottom: 15,             // space between multiple input boxes
-        backgroundColor: '#fff',      // white background for the input
+        height: 50,                   
+        borderColor: '#ccc',         
+        borderWidth: 1,               
+        borderRadius: 8,              
+        paddingHorizontal: 15,        
+        marginBottom: 15,             
+        backgroundColor: '#fff',      
         fontFamily: 'manrope'
 
     },
@@ -182,13 +180,13 @@ const styles = StyleSheet.create({
     buttonContainer: {
         marginTop: 5,
         paddingHorizontal: 20,
-        marginBottom: 30, // Extra bottom spacing if needed
+        marginBottom: 30, 
         width: '100%',
         alignItems: 'center',
     },
     button: {
-        backgroundColor: '#AF4926', // Blue background color
-        borderRadius: 10,           // Rounded edges
+        backgroundColor: '#AF4926', 
+        borderRadius: 10,           
         paddingVertical: 15,
         paddingHorizontal: 20,
         width: '100%',

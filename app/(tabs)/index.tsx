@@ -71,7 +71,7 @@ export default function HomeScreen() {
 
 	// Build the highlightObjects array by finding each concert by id
 	indexes.forEach((id) => {
-		const concertObj: Concert | undefined = concertsData.concerts.find(
+		const concertObj: Concert | undefined = [...concertsData.concerts].find(
 			(concert: Concert) => concert.id === id
 		);
 		if (concertObj) {
@@ -90,11 +90,11 @@ export default function HomeScreen() {
 	}
 
 	concertsData.concerts
-		.sort((a: Concert, b: Concert) => timeToMinutes(a.time) - timeToMinutes(b.time))
-		.sort((a: Concert, b: Concert) => dateToNumbers(a.date) - dateToNumbers(b.date))
+		.sort((a: Concert, b: Concert) => timeToMinutes(a.time) - timeToMinutes(b.time)) //sort by time
+		.sort((a: Concert, b: Concert) => dateToNumbers(a.date) - dateToNumbers(b.date)) //sort by date
 
 	
-	const upcomingConcerts: Concert[] = concertsData.concerts.splice(0,4)
+	const upcomingConcerts: Concert[] = [...concertsData.concerts].splice(0,4)
 	
 
 	return (
@@ -172,10 +172,10 @@ const styles = StyleSheet.create({
 		position: 'relative',
 	},
 	imageWrapper: {
-		borderWidth: 2, // Thickness of the border
-		borderColor: '#FFFFFF', // Color of the border
-		borderRadius: 10, // Rounded corners
-		padding: 5, // Space between the image and the border
+		borderWidth: 2, 
+		borderColor: '#FFFFFF', 
+		borderRadius: 10, 
+		padding: 5, 
 		backgroundColor: '#F1F1F8',
 		marginLeft: 10,
 	},
@@ -201,12 +201,10 @@ const styles = StyleSheet.create({
 		backgroundColor: '#fff',
 		padding: 10,
 		borderRadius: 8,
-		// Shadow styles for iOS
 		shadowColor: '#000',
 		shadowOpacity: 0.1,
 		shadowOffset: { width: 0, height: 2 },
 		shadowRadius: 4,
-		// Elevation for Android
 		elevation: 3,
 	},
 	concertImage: {

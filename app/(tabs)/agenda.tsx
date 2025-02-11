@@ -43,6 +43,8 @@ export default function Agenda() {
 
 	// When FlatList detects that the user is reaching the end (onEndReached), the loadMore function adds more concerts.
 	// It updates visibleConcerts by slicing a larger portion from the original concertsData.concerts array.
+
+	//this feature wasnt implemented because of an issue i couldnt fix so i just chose not to use lazy loading
 	const loadMore = () => {
 		const currentLength = visibleConcerts.length;
 		if (currentLength < concertsData.concerts.length) {
@@ -76,7 +78,7 @@ export default function Agenda() {
 			renderStickyHeader={() => (
 				<View
 					style={{
-						height: 100, // make sure this matches your stickyHeaderHeight prop
+						height: 100,
 						width: '100%',
 						backgroundColor: '#D7A492',
 						justifyContent: 'center',
